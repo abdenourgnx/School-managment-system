@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="parent" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: transparent;" stylesheets="@border.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainBorder.borderController">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="27.0" prefWidth="100.0" styleClass="titleBar" VBox.vgrow="NEVER">
+               <children>
+                  <Label fx:id="title" alignment="CENTER" layoutX="63.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="Home" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="63.0" layoutY="10.0" onMouseClicked="#minimize" prefHeight="27.0" prefWidth="47.0" styleClass="mini" stylesheets="@border.css" text="_" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="-20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="exit11" alignment="CENTER" layoutX="63.0" layoutY="10.0" onMouseClicked="#close" prefHeight="27.0" prefWidth="47.0" styleClass="x" stylesheets="@border.css" text="X" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="border" stylesheets="@border.css">
+                     <children>
+                        <HBox fx:id="homeBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="53.0" spacing="16.0" styleClass="buttons" stylesheets="@border.css" VBox.vgrow="NEVER">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="HOME" size="33" wrappingWidth="37.999999046325684" />
+                              <Label prefHeight="51.0" prefWidth="75.0" text="Home" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="12.0" />
+                           </padding>
+                        </HBox>
+                        <VBox minWidth="-Infinity" spacing="20.0" VBox.vgrow="NEVER">
+                           <children>
+                              <HBox fx:id="studentsBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="52.0" prefWidth="56.0" spacing="16.0" styleClass="buttons" stylesheets="@border.css">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/studentWhite.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="51.0" prefWidth="2.0" text="Students" textFill="WHITE">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox fx:id="teachersBtn" alignment="CENTER_LEFT" layoutX="10.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="53.0" spacing="16.0" styleClass="buttons" stylesheets="@border.css">
+                                 <children>
+                                    <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/teacherWhite.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="51.0" prefWidth="96.0" text="Teachers" textFill="WHITE">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox fx:id="paymentBtn" alignment="CENTER_LEFT" layoutX="10.0" layoutY="144.0" minWidth="-Infinity" prefHeight="56.0" prefWidth="47.0" spacing="16.0" styleClass="buttons" stylesheets="@border.css">
+                                 <children>
+                                    <ImageView fitHeight="42.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/paymentWhite.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="51.0" prefWidth="88.0" text="Payment" textFill="WHITE">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets top="50.0" />
+                           </padding>
+                        </VBox>
+                        <HBox styleClass="buttons" stylesheets="@border.css" />
+                     </children>
+                  </VBox>
+                  <Pane fx:id="pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="pane" stylesheets="@border.css" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

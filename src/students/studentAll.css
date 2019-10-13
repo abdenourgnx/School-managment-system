@@ -1,0 +1,203 @@
+{
+    primary : #35426b;
+    primaryB: #8092c9;
+    primary2: rgba(53,66,107,0.3);
+    secondary : white;
+    exiteRed : rgba(255,0,0,0.7);
+}
+
+
+.SidePane{
+    -fx-background-color: linear-gradient( primary, primaryB);
+    -fx-effect: dropshadow(three-pass-box,black,40,0,0,40);
+}
+
+.table-view{
+    -fx-base: transparent ;
+    -fx-control-inner-background: transparent;
+
+    -fx-background-color: transparent;
+
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: primary;
+    -fx-table-header-border-pading: 10px;
+
+    -fx-table-header-background-color : primary;
+    -fx-border-width: 0 1 1 1;
+    -fx-border-color: primary;
+
+
+}
+
+.table-view .column-header-background {
+    -fx-background-color: primary;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 30;
+    -fx-border-width: 1 1 2 1;
+    -fx-background-color: transparent;
+    -fx-border-color:
+            transparent
+            transparent
+            derive(primary, 0%)
+            white;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 13pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: primary2
+}
+.table-view .table-cell{
+    -fx-text-fill:black;
+    -fx-text-size: 10pt;
+}
+.table-view .scroll-bar{
+    -fx-background-color: transparent;
+    -fx-progress-color: transparent;
+
+}
+
+
+.hbox2{
+
+    -fx-background-color: primary2;
+
+}
+
+.addButton{
+
+    -fx-background-color: transparent;
+    -fx-border-color: primary;
+    -fx-text-fill: primary;
+
+}
+
+.addButton:hover {
+    -fx-background-color: rgba(0,100,0,0.5);
+    -fx-border-color: white;
+    -fx-text-fill: white;
+
+}
+
+.deletbtn{
+    -fx-background-color: transparent;
+    -fx-border-color: primary;
+    -fx-text-fill: primary;
+
+}
+
+.deletbtn:hover {
+    -fx-background-color: rgba(255,50,0,0.5);
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+.editeBtn{
+    -fx-background-color: transparent;
+    -fx-border-color: primary;
+    -fx-text-fill: primary;
+}
+
+.editeBtn:hover {
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+
+
+.all{
+    -fx-background-color: transparent;
+
+}
+
+.Vcontainer{
+    -fx-background-color: transparent;
+}
+.addbutton{
+    -fx-text-fill: white;
+    -fx-background-color: #35426b;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: white;
+    -fx-border-width: 1px 0px 0px 0px;
+}
+.cancleBtn{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: white;
+    -fx-border-width: 1px 0px 0px 0px;
+}
+
+.text-field{
+    -fx-text-fill: white ;
+    -fx-font-size: 10pt;
+    -fx-prompt-text-fill: white 0.5;
+    -fx-prompt-text-size: 7pt;
+}
+
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(255,255,255,0.4);
+}
+
+.loadBtn{
+    -fx-background-color: primary;
+    -fx-background-radius: 10px;
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+
+}
+
+
+.elipse{
+    -fx-background-color: transparent;
+    -fx-fill: linear-gradient(to left,primary, primaryB);
+    -fx-stroke-width:   3px;
+    -fx-stroke: white;
+
+}
+
+
+.radio-button .selected{
+    -fx-focus-color : white;
+}
+
+.combo-box {
+    -fx-background-color: rgba(53,66,107,0.7);
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+
+

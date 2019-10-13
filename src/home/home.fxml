@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@home.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.homeController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="700.0" styleClass="topLyout" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="NEVER">
+         <children>
+            <ImageView fitHeight="119.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="174.0" prefWidth="66.0" HBox.hgrow="ALWAYS" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="182.0" fitWidth="421.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/homePic.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="56.0" layoutY="214.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="356.0" prefWidth="700.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="214.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane fx:id="studentsPan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="200.0" styleClass="tabs">
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="35.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="x">
+                     <image>
+                        <Image url="@../icons/student.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="32.0" layoutY="144.0" prefHeight="32.0" prefWidth="136.0" text="Students" textFill="#35426b">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="studentInfo" alignment="CENTER" layoutX="44.0" layoutY="196.0" prefHeight="32.0" prefWidth="113.0" text="30 student" textFill="#2f2f2f">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="200.0" styleClass="tabs">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="40.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/teacher.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="32.0" layoutY="145.0" prefHeight="32.0" prefWidth="136.0" text="Teachers" textFill="#35426b">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="44.0" layoutY="197.0" prefHeight="32.0" prefWidth="113.0" text="10 teacher" textFill="#2f2f2f">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="210.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="200.0" styleClass="tabs">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="40.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/payment.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="32.0" layoutY="149.0" prefHeight="32.0" prefWidth="136.0" text="Payment" textFill="#35426b">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="40.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

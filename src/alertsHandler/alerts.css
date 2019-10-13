@@ -1,0 +1,48 @@
+{
+    primary : #35426b;
+    primaryB: #8092c9;
+    primary2: rgba(53,66,107,0.2);
+    secondary : white;
+    exiteRed : rgba(255,0,0,0.7);
+}
+
+
+
+.custom-alert{
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-text-fill: primary2;
+    -fx-border-radius: 5px ;
+}
+.custom-alert  .button-bar .container{
+    -fx-background-color: white;
+}
+.custom-alert .label.content{
+    -fx-font-size: 16px;
+    -fx-text-fill: primary;
+    -fx-text-alignment: center;
+    -fx-label-padding: 20px 0px 20px 0px;
+}
+.custom-alert > *.button-bar > *.container{
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px ;
+}
+
+.custom-alert .button {
+    -fx-background-color: primary;
+    -fx-text-fill: white;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: primary;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 11pt;
+    -fx-font-weight: bold;
+}
+.custom-alert .button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: primary;
+    -fx-font-size: 11pt;
+    -fx-border-color: primary;
+    -fx-border-width: 2px;
+}

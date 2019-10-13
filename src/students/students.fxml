@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@studentAll.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.studentController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="653.0" prefWidth="620.0" spacing="10.0" styleClass="hbox2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER" prefWidth="620.0" styleClass="hbox2" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXTextField fx:id="searchField" focusColor="WHITE" labelFloat="true" prefHeight="30.0" prefWidth="203.0" promptText="Search" unFocusColor="WHITE" />
+                  <Region layoutX="283.0" layoutY="10.0" prefHeight="56.0" prefWidth="51.0" />
+                  <Label prefHeight="21.0" prefWidth="35.0" text="year">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="yearChoice" prefHeight="25.0" prefWidth="77.0" />
+                  <Region prefHeight="56.0" prefWidth="18.0" />
+                  <Label layoutX="20.0" layoutY="28.0" prefHeight="21.0" prefWidth="35.0" text="class">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="classChoice" layoutX="298.0" layoutY="26.0" prefHeight="25.0" prefWidth="77.0" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" top="15.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <TableView fx:id="table" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="550.0" stylesheets="@studentAll.css" VBox.vgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="col0" maxWidth="110.0" minWidth="30.0" prefWidth="36.0" text="ID" />
+                  <TableColumn fx:id="col1" maxWidth="190.0" minWidth="110.0" prefWidth="184.0" text="First Name" />
+                  <TableColumn fx:id="col2" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" text="Last Name" />
+                  <TableColumn fx:id="col3" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" text="Gender" />
+                  <TableColumn fx:id="col4" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" text="Birthday " />
+               </columns>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TableView>
+            <HBox alignment="CENTER" prefWidth="470.0" spacing="10.0" styleClass="hbox2" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton fx:id="addbtn" prefHeight="45.0" prefWidth="130.0" styleClass="addButton" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#204872" iconName="PLUS" />
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="editeBtn" layoutX="161.0" layoutY="38.0" prefHeight="45.0" prefWidth="130.0" styleClass="editeBtn" text="Edite" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></JFXButton>
+                  <JFXButton fx:id="deleteBtn" layoutX="109.0" layoutY="48.0" onAction="#deletItems" prefHeight="45.0" prefWidth="130.0" styleClass="deletbtn" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane fx:id="pane" layoutX="396.0" layoutY="19.0" maxHeight="800.0" maxWidth="800.0" styleClass="SidePane" stylesheets="@studentAll.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="620.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="NEVER">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></Pane>
+   </children>
+</AnchorPane>

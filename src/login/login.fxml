@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" styleClass="root" stylesheets="@login.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="500.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" styleClass="root">
+         <image>
+            <Image url="@../img/front.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nameField" focusColor="WHITE" labelFloat="true" layoutX="548.0" layoutY="173.0" promptText="username" stylesheets="@login.css" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="passField" focusColor="WHITE" labelFloat="true" layoutX="549.0" layoutY="258.0" promptText="password" stylesheets="@login.css" unFocusColor="WHITE" />
+      <JFXButton layoutX="567.0" layoutY="386.0" onAction="#clicked" prefHeight="48.0" prefWidth="142.0" stylesheets="@login.css" text="LOGIN" />
+      <Label fx:id="exit" layoutX="750.0" layoutY="-5.0" onMouseClicked="#close" prefHeight="16.0" prefWidth="50.0" styleClass="x" stylesheets="@login.css" text="   x" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-13.0" layoutY="192.0" prefHeight="68.0" prefWidth="425.0" styleClass="hello" stylesheets="@login.css" text="School Managment System" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="45.0" layoutY="266.0" prefHeight="26.0" prefWidth="308.0" styleClass="small" stylesheets="@login.css" text="Full knowledge about students  " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="306.0" prefHeight="26.0" prefWidth="310.0" styleClass="small" stylesheets="@login.css" text="Parents notifings " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="41.0" layoutY="350.0" prefHeight="26.0" prefWidth="310.0" styleClass="small" stylesheets="@login.css" text="Real time data transfere" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="44.0" layoutY="397.0" prefHeight="26.0" prefWidth="310.0" styleClass="small" stylesheets="@login.css" text="Payments and accounts " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="359.0" fitWidth="370.0" layoutX="30.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="58.0" layoutX="501.0" layoutY="168.0" opacity="0.85" pickOnBounds="true" preserveRatio="true" styleClass="icons">
+         <image>
+            <Image url="@../icons/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="35.0" layoutX="512.0" layoutY="264.0" opacity="0.85" pickOnBounds="true" preserveRatio="true" styleClass="icons">
+         <image>
+            <Image url="@../icons/lock.png" />
+         </image>
+      </ImageView>
+      <ImageView id="icons" fitHeight="61.0" fitWidth="58.0" layoutX="604.0" layoutY="88.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/big.png" />
+         </image>
+         <styleClass>
+            <String fx:value="icons" />
+            <String fx:value="icons" />
+         </styleClass>
+      </ImageView>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="516.0" layoutY="316.0" prefHeight="58.0" prefWidth="234.0" styleClass="error" text="Username or Password is uncorrect" textFill="#ff5a5a" />
+      <Label layoutX="720.0" layoutY="469.0" text="Go offline&gt;" textFill="WHITE" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="loading" blendMode="ADD" fitHeight="270.0" fitWidth="230.0" layoutX="530.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/load.gif" />
+         </image>
+         <viewport>
+            <Rectangle2D height="500.0" minX="300.0" width="400.0" />
+         </viewport>
+      </ImageView>
+   </children>
+</AnchorPane>

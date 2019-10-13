@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="300.0" styleClass="all" stylesheets="@studentAll.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.show">
+    <children>
+        <Label alignment="CENTER" layoutY="-4.0" text="Student informations" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" stylesheets="@studentAll.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+            <content>
+                <AnchorPane styleClass="all">
+                    <children>
+                        <VBox prefHeight="459.0" prefWidth="302.0" spacing="25.0" styleClass="all" stylesheets="@studentAll.css">
+                            <children>
+                                <JFXTextField fx:id="idField" focusColor="WHITE" labelFloat="true" layoutX="60.0" layoutY="20.0" promptText="id" unFocusColor="BLACK" />
+                                <JFXTextField fx:id="nameField" focusColor="WHITE" labelFloat="true" promptText="First name" unFocusColor="BLACK">
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </JFXTextField>
+                                <JFXTextField fx:id="lnameField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Last name" styleClass="text-field" unFocusColor="BLACK" />
+                                <JFXTextField fx:id="gndrField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="124.0" promptText="Gender" unFocusColor="BLACK" />
+                                <JFXTextField fx:id="bdField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="67.0" promptText="Birthday" unFocusColor="BLACK" />
+                                <JFXTextField fx:id="adressField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="181.0" promptText="adresse" unFocusColor="BLACK" />
+                                <JFXTextField fx:id="numberField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="238.0" promptText="phone number" unFocusColor="BLACK" />
+                                <JFXTextField fx:id="yearField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="295.0" promptText="year" unFocusColor="BLACK" />
+                                <JFXTextField fx:id="classField" focusColor="WHITE" labelFloat="true" layoutX="60.0" layoutY="405.0" promptText="class" unFocusColor="BLACK" />
+                            </children>
+                            <padding>
+                                <Insets bottom="20.0" left="50.0" right="50.0" top="10.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <AnchorPane layoutY="50.0" prefHeight="116.0" prefWidth="300.0" styleClass="all" stylesheets="@studentAll.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+            <children>
+                <Circle fx:id="crcl" fill="DODGERBLUE" layoutX="150.0" layoutY="58.0" radius="58.0" stroke="BLACK" strokeType="INSIDE" styleClass="elipse" />
+            <ImageView fx:id="imageView" fitHeight="129.0" fitWidth="123.0" layoutX="89.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D height="200.0" width="200.0" />
+               </viewport>
+            </ImageView>
+            </children></AnchorPane>
+    </children>
+    <padding>
+        <Insets top="10.0" />
+    </padding>
+</AnchorPane>
